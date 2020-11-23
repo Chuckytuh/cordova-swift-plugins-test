@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin id="cordova-outsystems-swiftplugin42" version="0.0.1"
+  xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>cordova-outsystems-swiftplugin42</name>
+  <description>Swift framework compiled with SWIFT_VERSION 4.2</description>
+  <author>OutSystems Inc</author>
+
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="SwiftPluginFourTwo">
+        <param name="ios-package" value="SwiftPluginFourTwo"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/SwiftPluginFourTwo.h"/>
+    <source-file src="src/ios/SwiftPluginFourTwo.m"/>
+    <framework src="lib/MyFrameworkFourTwo.framework" custom="true" embed="true" />
+  </platform>
+</plugin>

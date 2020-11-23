@@ -1,0 +1,11 @@
+framework module MyFrameworkFiveFive {
+  umbrella header "MyFrameworkFiveFive.h"
+
+  export *
+  module * { export * }
+}
+
+module MyFrameworkFiveFive.Swift {
+    header "MyFrameworkFiveFive-Swift.h"
+    requires objc
+}

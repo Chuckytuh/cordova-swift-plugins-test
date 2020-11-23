@@ -1,0 +1,11 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 effective-4.2 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name MyFrameworkFourTwo
+import Foundation
+import Swift
+@_inheritsConvenienceInitializers @objc public class MyFrameworkClass : ObjectiveC.NSObject {
+  @objc public static func echoFromFramework() -> Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
+public func highOrderFunction() -> Swift.String

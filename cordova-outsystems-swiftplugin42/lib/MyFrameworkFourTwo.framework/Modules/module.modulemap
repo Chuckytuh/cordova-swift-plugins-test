@@ -1,0 +1,4 @@
+framework module MyFrameworkFourTwo {
+  header "MyFrameworkFourTwo-Swift.h"
+  requires objc
+}
